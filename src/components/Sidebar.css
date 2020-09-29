@@ -1,0 +1,65 @@
+/* global sideBar */
+.sidebar {
+  flex: 0.3;
+  display: flex;
+  flex-direction: column;
+}
+
+/* top of sidebar */
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-right: 1px solid grey;
+}
+.sidebar__headerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar__headerRight > .MuiSvgIcon-root {
+  font-size: 10px !important;
+}
+.sidebar__headerRight > .MuiIconButton-root {
+  padding: 10px;
+}
+.sidebar__headerRight > .MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* middle of sidebar = search */
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  padding: 0.5rem;
+}
+.sidebar__searchContainer {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #fffafb;
+}
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  color: grey;
+  padding: 0 0.5rem;
+}
+.sidebar__searchContainer > input {
+  flex: 1;
+  border: none;
+  padding: 5px;
+  margin-right: 0.5rem;
+  background-color: #fffafb;
+  font-size: 0.8rem;
+}
+
+/* container chat of sidebar */
+.sidebar__chats {
+  flex: 1;
+  background-color: #6e9887;
+  overflow: scroll;
+  scrollbar-width: none;
+}
