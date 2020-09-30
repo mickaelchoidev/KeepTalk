@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import Avatar from "@material-ui/core/Avatar";
 import IconButton from "@material-ui/core/IconButton";
@@ -12,6 +12,8 @@ import SidebarChat from "./SidebarChat";
 import "./Sidebar.css";
 
 function Sidebar() {
+  const [rooms, setRooms] = useState([]);
+
   return (
     <div className="sidebar">
       <div className="sidebar__header">

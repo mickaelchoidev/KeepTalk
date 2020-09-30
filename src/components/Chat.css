@@ -39,7 +39,70 @@
 
 .chat__body {
   flex: 1;
-  padding: 1rem;
-  background-color: #cbad90;
+  padding: 2rem 1rem;
+  background-image: linear-gradient(
+      0deg,
+      rgba(93, 87, 107, 1) 0%,
+      rgba(93, 87, 107, 0.5) 50%,
+      rgba(184, 184, 184, 0.8477591720281863) 100%
+    ),
+    url(https://images.unsplash.com/photo-1586075010923-2dd4570fb338?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+  background-repeat: repeat;
+  background-position: center;
   overflow: scroll;
+}
+.chat__message {
+  position: relative;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+  width: fit-content;
+  border-radius: 10px;
+  background-color: lightgrey;
+  margin-bottom: 1.5rem;
+}
+.chat__reciever {
+  margin-left: auto;
+  background-color: #b0f2b4;
+}
+.chat__messageName {
+  position: absolute;
+  top: -1.1rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.chat__messageTimestamp {
+  margin-left: 1rem;
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.chat__footer {
+  display: flex;
+  align-items: center;
+  background-color: grey;
+  padding: 0.5rem;
+}
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+  padding: 0 0.5rem;
+}
+.chat__footer > form > input {
+  flex: 1;
+  border-radius: 20px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+.chat__footer > form > button {
+  display: none;
+}
+.chat__footer > .MuiSvgIcon-root {
+  font-size: 10px !important;
+}
+.chat__footer > .MuiIconButton-root {
+  padding: 10px;
+}
+.chat__footer > .MuiIconButton-root:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
