@@ -59,7 +59,7 @@
 /* container chat of sidebar */
 .sidebar__chats {
   flex: 1;
-  background-color: #6e9887;
+  background-color: #b8b8b8;
   overflow: scroll;
   scrollbar-width: none;
 }
